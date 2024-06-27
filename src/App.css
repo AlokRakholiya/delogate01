@@ -1,0 +1,19 @@
+.container {
+  max-width: 1525px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+a{
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}

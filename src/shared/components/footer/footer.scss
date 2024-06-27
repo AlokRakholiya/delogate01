@@ -1,0 +1,130 @@
+@import '../../../scss/main.scss';
+
+footer{
+    background-color: #FFF;
+    box-shadow: 0 -4px 30px #0000002e;
+}
+.footer{
+    padding: 90px 0 0 ;
+    display: flex;
+    width: 100%;
+    gap: 140px;
+    border-bottom: 1px solid #b8b8b8;
+    @media (max-width:900px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+.footer-logo{
+    max-width: 390px;
+    .footer-logo-image{
+        margin: 0 0 27px;
+        img{
+            max-width: 100%;
+        }
+    }
+    .footer-logo-data{
+        margin: 0 0 25px;
+        p{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+    }
+    .footer-logo-social{
+        display: flex;
+        justify-content: space-between;
+        max-width: 200px;
+    }
+    @media (max-width:900px) {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        align-items: center;
+        .footer-logo-social{
+            gap: 30px;
+        }
+        .footer-logo-social img:hover{
+            transform: scale(1.3);
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+        }
+    }
+}
+.footer-data{
+    max-width: 690px;
+    padding: 30px 0 0 ;
+    margin: 0 0 50px;
+    .footer-data-grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 40px;
+        .footer-data-grid-item{
+            width: 200px;
+            .footer-data-grid-item-title{
+                margin: 0 0 30px;
+                h5{
+                    @include font18;
+                    font-weight: 600;
+                    border-bottom: 2px solid red;
+                }
+                h5:hover{
+                    color: red;
+                    transition: .3s;
+                }
+            }
+            .footer-data-grid-item-data{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                a{
+                    @include font16;
+                    font-weight: 400;
+                }
+                a:hover{
+                    color: red;
+                    transition: .3s;
+                }
+                button{
+                    @include hero-button;
+                    font-size: 20px;
+                    padding: 10px 15px;
+                    transition: .3s;
+                }
+                button:hover{
+                    transform: scale(1.1);
+                    background-color: red;
+                    color: white;
+                }
+            }
+        }
+    }
+    @media (max-width:768px) {
+        .footer-data-grid{
+            grid-template-columns: repeat(2,1fr);
+            .footer-data-grid-item{
+                .footer-data-grid-item-data{
+                    button{
+                        margin-top: 10px;
+                        font-size: 17px;
+                        padding: 5px 0px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width:576px) {
+        .footer-data-grid{
+            grid-template-columns: 1fr;
+        }
+
+    }
+}
+.footer-rights{
+    p{
+        text-align: center;
+        padding: 30px 0 21px ;
+    }
+}

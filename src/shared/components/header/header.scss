@@ -1,0 +1,68 @@
+@import '../../../scss/main.scss';
+
+header {
+    max-width: 100%;
+    padding: 14px 0;
+    background-color: #FFF;
+    height: calc(70px - 14px);
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    box-shadow: 0 4px 20px #00000024;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav {
+    nav {
+        display: flex;
+        align-self: center;
+
+        a {
+            padding: 0 30px;
+            @include font16;
+            position: relative;
+            border-left: 1px solid var(--theme-border-nav);
+        }
+    }
+
+    nav a:hover{
+        color: red;
+        transition: .3s;
+    }
+
+    @media (max-width:1060px) {
+        display: none;
+    }
+}
+
+.header-button {
+    button {
+        @include header-button;
+        transition: .3s;
+    }
+
+    @media (max-width:1060px) {
+        display: none;
+    }
+    button:hover{
+        transform: scale(1.2);
+        background-color: red;
+        color: white;
+    }
+}
+
+.header-menu {
+    display: none;
+    img{
+        width: 45px;
+        height: 50px;
+    }
+    @media (max-width:1060px) {
+        display: block;
+    }
+}

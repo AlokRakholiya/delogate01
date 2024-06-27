@@ -1,0 +1,94 @@
+@mixin font32{
+    font-size: 32px;
+}
+@mixin font16{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: Outfit, sans-serif;
+}
+@mixin font18{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: Outfit, sans-serif;
+}
+@mixin font20{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+    font-family: Outfit, sans-serif;
+}
+@mixin font14{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: Outfit, sans-serif;
+}
+@mixin font72{
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 80px;
+    font-family: Outfit, sans-serif;
+}
+@mixin font60{
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 80px;
+    font-family: Outfit, sans-serif;
+}
+@mixin font24-light{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: Outfit, sans-serif;
+}
+@mixin font22-light{
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: Outfit, sans-serif;
+}
+@mixin font24-dark{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    font-family: Outfit, sans-serif;
+}
+@mixin font38{
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 60px;
+    font-family: Outfit, sans-serif;
+}
+@mixin font48{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px;
+    font-family: Outfit, sans-serif;
+}
+@mixin font22{
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 6normal;
+    font-family: Outfit, sans-serif;
+}
+@mixin font30{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+    font-family: Outfit, sans-serif;
+}

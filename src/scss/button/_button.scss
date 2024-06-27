@@ -1,0 +1,18 @@
+@mixin header-button{
+    color: #FFF;
+    background-color: var(--theme-purple-bg);
+    border: none;
+    @include font14;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+@mixin hero-button{
+    color: #FFF;
+    background-color: var(--theme-purple-bg);
+    border: none;
+    @include font24-dark;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+}
