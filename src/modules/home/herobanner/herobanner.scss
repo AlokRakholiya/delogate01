@@ -31,7 +31,13 @@
 
         button {
             @include hero-button;
+            transition: .4s;
         }
+            button:hover{
+                transform: scale(1.1);
+                background-color: red;
+                color: white;
+            }
     }
 
     .herobanner-grid-image {
